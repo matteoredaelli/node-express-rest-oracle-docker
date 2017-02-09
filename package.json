@@ -1,0 +1,35 @@
+{
+  "name": "biapps",
+  "version": "1.0.0",
+  "description": "RESTful APIs for databases ",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matteoredaelli/node-express-rest-oracle-docker"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "Oracle",
+    "REST"
+  ],
+  "author": "Matteo Redaelli",
+  "license": "GPL v3",
+  "bugs": {
+    "url": "none"
+  },
+  "homepage": "http://www.redaelli.org/matteo/",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "concat-stream": "^1.6.0",
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "nodemon": "^1.11.0",
+    "oracledb": "^1.12.2",
+    "request": "^2.79.0",
+    "util": "^0.10.3"
+  }
+}

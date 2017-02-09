@@ -1,0 +1,14 @@
+# copy this file to /etc/systemd/system/docker-biapis.service
+# sudo systemctl enable docker-biapis.service
+[Unit]
+Description=BI APIs container
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a biapis
+ExecStop=/usr/bin/docker stop -t 2 biapis
+
+[Install]
+WantedBy=default.target
