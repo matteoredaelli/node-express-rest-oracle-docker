@@ -4,6 +4,8 @@ sample of sharing (oracle) database tables via rest api using node.js, express i
 # setup
 Install oracle instant client (in this example under /home/matteo/apps/instantclient_12_1)
 
+Setup oracle environment as in ecosystem.config.js
+
 git clone https://github.com/matteoredaelli/node-express-rest-oracle-docker
 
 npm install
@@ -11,6 +13,14 @@ npm install
 # run it
 
 ## docker container
+
+copy oracle zip files under
+
+ oracle/linux/instantclient-basic-linux.x64-12.1.0.2.0.zip
+ oracle/linux/instantclient-jdbc-linux.x64-12.1.0.2.0.zip
+ oracle/linux/instantclient-odbc-linux.x64-12.1.0.2.0.zip
+ oracle/linux/instantclient-sdk-linux.x64-12.1.0.2.0.zip
+ oracle/linux/instantclient-sqlplus-linux.x64-12.1.0.2.0.zip
 
 docker build -t biapis .
 
