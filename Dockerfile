@@ -1,10 +1,5 @@
 FROM node:7
 
-ENV http_proxy="http://lucifer.pirelli.com:80/"
-ENV https_proxy="http://lucifer.pirelli.com:80/"
-ENV HTTPS_PROXY="http://lucifer.pirelli.com:80/"
-ENV HTTP_PROXY="http://lucifer.pirelli.com:80/"
-
 #INSTALL LIBAIO1 & UNZIP (NEEDED FOR STRONG-ORACLE)
 RUN apt-get update \
   && apt-get install -y libaio1 \
